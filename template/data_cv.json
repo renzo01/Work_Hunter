@@ -1,0 +1,151 @@
+{
+  "Job_Company": "Purpose-Led Organisation",
+  "personal_info": {
+    "name": "Renzo Manuel Gómez Césare",
+    "phone": "+51921752732",
+    "phone_wsp": "https://wa.me/qr/7BXMCVC7WHE3E1",
+    "country": "Peru",
+    "email": "renzogomez577@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/rmgdeveloper/",
+    "trailhead": "https://www.salesforce.com/trailblazer/renzogomez577",
+    "languages": [
+      "Spanish (Native)",
+      "English (B2)",
+      "Portuguese (Beginner)"
+    ],
+    "headline": "☁️ Salesforce Developer | Apex & LWC Specialist | Sales, Service & Marketing Cloud | Highly motivated to master Experience Cloud"
+  },
+  "education": [
+    {
+      "institution": "Cibertec",
+      "location": "Lima, Peru",
+      "degree": "Associate Degree, Computer Science",
+      "period": "2017 - 2020"
+    },
+    {
+      "institution": "Asociación Cultural Peruano Británica (Británico)",
+      "location": "Lima, Peru",
+      "degree": "Intermediate English Certification",
+      "period": "2019 - 2020"
+    }
+  ],
+  "certifications": [
+    "Salesforce Ecosystem Trailhead Ranger Certification – February 2020",
+    "Copado AI Certification",
+    "JavaScript Moderno Guía Definitiva (Construye +15 Proyectos)",
+    "JavaScript: The Advanced Concepts (2023 Update)"
+  ],
+  "skills": [
+    {
+      "category": "Salesforce Ecosystem (Core Expertise)",
+      "items": [
+        "Apex Development (Triggers, Asynchronous Apex, Batch Apex, Schedulable Classes, Apex Test Classes)",
+        "Lightning Components (Lightning Web Components, Aura Components)",
+        "Salesforce Configuration (Permission Sets, Roles, Sharing Rules, FLS, CORS, Scheduled Jobs, Email Templates, Custom Reports)",
+        "Sales Cloud (Client management, opportunity creation and lifecycle, role/permission assignment)",
+        "Service Cloud (Client support and tracking solutions)",
+        "Marketing Cloud (Dynamic email campaigns, user information updates, data management)",
+        "Data Management (SOQL, DataLoader, high-volume data operations, migration)",
+        "Platform Integration (REST APIs / Web Services integration)",
+        "Salesforce Security (Dynamic data obfuscation/masking, access controls, banking compliance)",
+        "Trailhead Rank: Ranger"
+      ]
+    },
+    {
+      "category": "AI & Technical Skills",
+      "items": [
+        "AI-Assisted Development (Integration of AI Agents, GitHub Copilot, and Copado AI in the SDLC)",
+        "Modern JavaScript (ES6+, Advanced Concepts for LWC development)",
+        "Workflow Engineering (Process redesign, optimization of data synchronization, automation of multi-channel communications)"
+      ]
+    },
+    {
+      "category": "Professional Motivation",
+      "items": [
+        "Highly motivated to master Experience Cloud and Agile/Scrum methodologies to expand technical reach and support team delivery",
+        "Eager to apply deep Apex and LWC expertise to new business challenges and technologies"
+      ]
+    }
+  ],
+  "work_experience": [
+    {
+      "company": "Entelgy",
+      "role": "Salesforce Developer",
+      "period": "April 2025 – April 2026",
+      "location": "Lima, Peru",
+      "bullets": [
+        "Architected scalable Salesforce solutions utilizing advanced Apex (Asynchronous processing, Batch, Triggers) and modern frontend frameworks including LWC and Aura Components.",
+        "Streamlined platform governance by managing complex security architectures (Permission Sets, CORS, Sharing Rules) and ensuring data integrity through SOQL and DataLoader.",
+        "Spearheaded the integration of AI Agents and GitHub Copilot into the development workflow to automate repetitive tasks, enhancing development workflows and code quality."
+      ]
+    },
+    {
+      "company": "Globant",
+      "role": "Salesforce Developer",
+      "period": "September 2023 – January 2025",
+      "location": "Lima, Peru",
+      "bullets": [
+        "Engineered robust, scalable applications on the Salesforce platform utilizing Apex, Lightning Web Components, and Aura for top-tier enterprise clients.",
+        "Architected complex security models and platform configurations to ensure system integrity, compliance, and automated Scheduled Jobs execution.",
+        "Executed high-volume data operations and complex queries using SOQL and DataLoader to ensure optimal performance across enterprise environments.",
+        "Pioneered the integration of AI Agents and Copilot within the Software Development Life Cycle (SDLC) to enhance development processes."
+      ]
+    },
+    {
+      "company": "NTT DATA Europe & LATAM",
+      "role": "Salesforce Developer",
+      "period": "January 2022 – September 2023",
+      "location": "Lima, Peru",
+      "bullets": [
+        "Designed and implemented customized software solutions using Apex, including Triggers, Schedulables, and Batch classes.",
+        "Managed comprehensive platform configurations, including Permission Sets, sharing rules, roles, CORS, Scheduled Jobs, and Email Templates.",
+        "Administered database management utilizing SOQL for complex queries and DataLoader for efficient data migration."
+      ]
+    },
+    {
+      "company": "Nugenba",
+      "role": "Salesforce Developer",
+      "period": "March 2021 – January 2022",
+      "location": "Lima, Peru",
+      "bullets": [
+        "Engineered high-performance software solutions leveraging LWC and proficiently utilizing JavaScript and Apex.",
+        "Built scalable, automated processes by implementing Apex Triggers, Batch Apex, and Schedulable classes to meet business needs.",
+        "Configured essential platform components, including security models (Permission Sets, Sharing Rules, Roles) and delivered actionable insights through custom Reports."
+      ]
+    }
+  ],
+  "professional_projects": [
+    {
+      "name": "BBVA - Digital Workplace",
+      "period": "Apr 2025 – Apr 2026",
+      "associated_with": "Entelgy",
+      "bullets": [
+        "Workflow Engineering: Redesigned and updated the Opportunity management flow in Salesforce to execute multiple server-side calls, optimizing data synchronization and integration performance.",
+        "Automated Communications: Engineered a multi-channel notification system utilizing Email and Chatter alerts, triggered dynamically based on specific Opportunity stages.",
+        "System Integration: Developed sophisticated logic to handle complex server interactions and maintain data consistency across various business process milestones."
+      ],
+      "skills": ["Apex Test Class", "REST APIs"]
+    },
+    {
+      "name": "BCP",
+      "period": "Mar 2024 – Nov 2024",
+      "associated_with": "Globant",
+      "bullets": [
+        "Data Security Implementation: Developed a robust security solution on the Salesforce platform for the protection of sensitive product data (credit/debit cards).",
+        "Dynamic Data Obfuscation: Engineered custom logic to perform data obfuscation on critical information, ensuring restricted readability to authorized users.",
+        "Access Control Management: Configured advanced security models, including FLS and visibility rules, to maintain strict compliance with data protection regulations."
+      ],
+      "skills": ["Apex Test Class", "REST APIs"]
+    },
+    {
+      "name": "Campaña de Email - Centenario",
+      "period": "Mar 2023 – Apr 2023",
+      "associated_with": "NTT DATA Europe & LATAM",
+      "bullets": [
+        "Designed customized campaigns specifically aimed at updating user information for clients using Salesforce Marketing Cloud.",
+        "Leveraged advanced functionalities of Marketing Cloud to ensure accurate and efficient data updates."
+      ],
+      "skills": ["Salesforce Marketing Cloud", "Salesforce Service Cloud"]
+    }
+  ]
+}

@@ -1,2 +1,7 @@
 tailorCVs/
 Job_description.md
+
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc

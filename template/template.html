@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @page {size: letter; margin: 1in;}
+        * {font-family: 'Times New Roman', Times, serif; margin: 0; padding: 0;}
+        body {font-size: 11pt; line-height: 1.5; color: #000;}
+        
+        /* Header / Name */
+        header {text-align: center; margin-bottom: 6pt; border-bottom: 1pt solid #000; padding-bottom: 6pt;}
+        h1 {font-size: 14pt; font-weight: bold; margin: 0 0 2pt 0;}
+        .headline {font-size: 11pt; font-weight: normal; margin: 0 0 4pt 0; font-style: italic;}
+        
+        /* Contact Info */
+        .contact-info {font-size: 10pt; margin: 2pt 0;}
+        
+        /* Section Headings */
+        h2 {font-size: 11pt; font-weight: bold; margin: 12pt 0 6pt 0; text-transform: uppercase;}
+        
+        /* Entries */
+        .entry {margin: 6pt 0 0 0;}
+        .entry-header {display: block; margin: 0;}
+        .entry-title {font-weight: bold; display: inline;}
+        .entry-company {font-weight: bold; display: inline;}
+        .entry-meta {display: inline; margin-left: 0;}
+        .entry-location-date {display: block; margin: 0 0 2pt 0;}
+        
+        /* Lists */
+        ul {margin: 4pt 0 0 20pt; padding: 0; list-style: disc;}
+        li {margin: 2pt 0; line-height: 1.4;}
+        
+        /* Section */
+        section {margin-bottom: 6pt;}
+        
+        /* Paragraphs */
+        p {margin: 0 0 4pt 0; line-height: 1.5;}
+        
+        /* Skills formatting */
+        .skill-category {font-weight: bold; display: inline; margin-right: 0;}
+    </style>
+</head>
+<body>
+    <!-- HEADER / CONTACT INFORMATION - Harvard Format -->
+    <header>
+        <h1>{{personal_info.name}}</h1>
+        <p class="headline">{{personal_info.headline}}</p>
+        <p class="contact-info">
+            <a href="tel:{{personal_info.phone}}">{{personal_info.phone}}</a> &bullet; <a href="mailto:{{personal_info.email}}">{{personal_info.email}}</a> &bullet; <a href="{{personal_info.linkedin}}">LinkedIn</a> &bullet; <a href="{{personal_info.trailhead}}">Trailblazer Profile</a>
+        </p>
+    </header>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    {% if personal_info.get('summary') or professional_summary %}
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Salesforce Developer with 5 years of hands-on experience designing, developing, and deploying enterprise-grade solutions. Expert in Apex, Lightning Web Components (LWC), and REST/SOAP API integrations across Sales, Service, and Marketing Clouds. Proven track record of leveraging AI-assisted development (GitHub Copilot) and DevOps tools (Copado) to accelerate delivery timelines by 15%+.</p>
+    </section>
+    {% endif %}
+
+    <!-- PROFESSIONAL EXPERIENCE - Harvard Format -->
+    {% if work_experience %}
+    <section>
+        <h2>Professional Experience</h2>
+        {% for experience in work_experience %}
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">{{experience.role}}</span>
+                <span class="entry-meta">| {{experience.company}}</span>
+            </div>
+            <div class="entry-location-date">{{experience.location}} | {{experience.period}}</div>
+            <ul>
+                {% for bullet in experience.bullets %}
+                <li>{{bullet}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    <!-- TECHNICAL SKILLS - Harvard Format -->
+    {% if skills %}
+    <section>
+        <h2>Technical Skills</h2>
+        {% for skill_group in skills %}
+        <p><span class="skill-category">{{skill_group.category}}:</span> 
+        {% set items_list = skill_group['items'] %}
+        {% for item in items_list %}{{item}}{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    <!-- PROFESSIONAL PROJECTS - Harvard Format -->
+    {% if professional_projects %}
+    <section>
+        <h2>Professional Projects</h2>
+        {% for project in professional_projects %}
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">{{project.name}}</span>
+                <span class="entry-meta">| {{project.associated_with}}</span>
+            </div>
+            <div class="entry-location-date">{{project.period}}</div>
+            <ul>
+                {% for bullet in project.bullets %}
+                <li>{{bullet}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    <!-- EDUCATION - Harvard Format -->
+    {% if education %}
+    <section>
+        <h2>Education</h2>
+        {% for edu in education %}
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-company">{{edu.degree}}</span>
+            </div>
+            <div class="entry-location-date">{{edu.institution}}, {{edu.location}} | {{edu.period}}</div>
+        </div>
+        {% endfor %}
+    </section>
+    {% endif %}
+
+    <!-- CERTIFICATIONS - Harvard Format -->
+    {% if certifications %}
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            {% for cert in certifications %}
+            <li>{{cert}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    <!-- LANGUAGES - Harvard Format -->
+    {% if personal_info.get('languages') %}
+    <section>
+        <h2>Languages</h2>
+        <ul>
+            {% for language in personal_info.languages %}
+            <li>{{language}}</li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+</body>
+</html>
